@@ -1,0 +1,94 @@
+body {
+    background-color: rgb(243, 229, 245);
+    padding: 0;
+    margin: 0;
+}
+
+#headStyle {
+    background-color: rgb(156, 39, 176);
+    height: 20vh;
+}
+
+#mainContainer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 10%;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px 70px 70px 70px;
+    width: 50%;
+    height: 80vh;
+}
+
+#head {
+    text-align: center;
+    font-size: 18px;
+    font-family: Arapey;
+    padding-bottom: 50px;
+}
+#bodyDetails{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+#detailContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+#nameCont {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.nameValue {
+    width: 300px;
+}
+.star{
+    color: red;
+}
+#btnContainer{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    padding-top: 70px;
+}
+
+.btn{
+    background-color: rgb(156, 39, 176);
+    color: white;
+    padding: 10px;
+    width: 100px;
+    border: none;
+}
+.btn:hover{
+    background-color: white;
+    color: rgb(156, 39, 176);
+    border: 2px solid rgb(156, 39, 176);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#genderContainer{
+    display: flex;
+    position: relative;
+    left: 10%;
+    flex-direction:row;
+}
+.genderLable{
+    flex: 27.5%;
+}
+.genderInput{
+    flex:50%;
+}

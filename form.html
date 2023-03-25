@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validate Form</title>
+    <link href='https://fonts.googleapis.com/css?family=Arapey' rel='stylesheet'>
+    <link rel="stylesheet" href="form.css">
+    <script src="form.js"></script>
+</head>
+
+<body>
+    <div id="headStyle"></div>
+    </div>
+    <div id="mainContainer">
+        <header id="head">
+            <h1 id="heading">
+                User Registration Form
+            </h1>
+            <hr>
+        </header>
+        <div id="bodyDetails">
+            <div id="detailContainer">
+                <label for="Username" id="lableName" class="nameValue">Username <span class="star">&#42;</span> </label>
+                <input type="text" id="nameValue" name="nameValue" class="nameValue">
+            </div>
+            <div id="detailContainer">
+                <label for="Username" id="lableName" class="nameValue">Password <span class="star">&#42;</span> </label>
+                <input type="password" id="passwordValue" name="passwordValue" class="nameValue">
+                <!-- Not use password show button for high security purpose -->
+            </div>
+            <div id="detailContainer">
+                <label for="Username" id="lableName" class="nameValue">Confirm Password <span class="star">&#42;</span>
+                </label>
+                <input type="password" id="conPassValue" name="conPassValue" class="nameValue">
+                <!-- Not use password show button for high security purpose -->
+            </div>
+            <div id="detailContainer">
+                <label for="Username" id="lableName" class="nameValue">Address <span class="star">&#42;</span> </label>
+                <textarea id="addressValue" name="addressValue" rows="4" cols="50" class="nameValue"
+                    placeholder=""></textarea>
+            </div>
+            <div id="detailContainer">
+                <label for="Username" id="lableName" class="nameValue">Email <span class="star">&#42;</span> </label>
+                <input type="text" id="emailValue" name="emailValue" class="nameValue">
+            </div>
+            <div id="genderContainer">
+                <div class="genderLable">
+                    <label for="Username" id="lableName" class="nameValue">Gender <span class="star">&#42;</span>
+                    </label>
+                </div>
+                <div class="genderInput">
+                    <input type="radio" id="maleChecked" name="gender" value="maleChecked" class="">
+                    <label for="opt1">Male</label>
+                    <input type="radio" id="femaleChecked" name="gender" value="femaleChecked">
+                    <label for="opt2">Female</label>
+                </div>
+
+            </div>
+            <div id="detailContainer">
+                <label for="Username" class="nameValue">Country Select <span class="star">&#42;</span> </label>
+                <select id="dropMenu" name="dropdown" class="nameValue">
+                    <option value="option0" id="defalutDrop">- Select -</option>
+                    <option value="option1">United States</option>
+                    <option value="option2">United Kingdom</option>
+                    <option value="option3">United Arabic Emirates</option>
+                    <option value="option4">Japan</option>
+                    <option value="option4">Germany</option>
+                    <option value="option4">Switzerland</option>
+                </select>
+            </div>
+
+            <div id="btnContainer">
+                <input type="submit" id="submit" class="btn" onclick="confirmValidity()">
+                <input type="reset" id="reset" class="btn" onclick="resetAll()">
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
